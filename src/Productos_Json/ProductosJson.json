@@ -1,0 +1,81 @@
+[
+    {
+        "Id":1,
+        "Producto": "Pantalon",
+        "Nombre": "Colores",
+        "Precio" : 2800,
+        "Talle": 4,
+        "Stock" : 10,
+        "Foto" : "/shorts_producto_ig_1.jpg"
+    },
+    
+
+    {
+        "Id":2,
+        "Producto": "Remera",
+        "Nombre": "Pajarito",
+        "Precio" : 2500,
+        "Talle": 6,
+        "Stock" : 8,
+        "Foto" : "/remera_producto_ig_2.jpg"
+
+    },
+
+    {
+        "Id":3,
+        "Producto": "Remera",
+        "Nombre": "Monstruo",
+        "Precio" : 2500,
+        "Talle": 8,
+        "Stock" :10,
+        "Foto" : "/remera_producto_ig_1.jpg"
+    },
+    {
+        "Id":4,
+        "Producto": "Vestido",
+        "Nombre":"Monstruo Verde",
+        "Precio" : 4000,
+        "Talle": 4,
+        "Stock" : 8,
+        "Foto" : "/vestidos_producto ig_1.jpg"
+    },
+    
+
+    {
+        "Id":5,
+        "Producto": "Vestido",
+        "Nombre":"Monstruo Rojo",
+        "Precio" : 4000,
+        "Talle": 2,
+        "Stock" : 8,
+        "Foto" : "/vestidos_producto_ig_2.jpg"
+    },
+    
+
+    {
+        "Id":6,
+        "Producto": "Bodys",
+        "Nombre":"Pajarito Azul",
+        "Precio" : 6000,
+        "Talle": 1,
+        "Stock" : 15,
+        "Foto" : "/body_producto.jpg"
+    },
+
+    {
+        "Id":7,
+        "Producto":"Chaleco",
+        "Nombre":"Orejitas",
+        "Precio" : 9000,
+        "Talle": 8,
+        "Stock" : 15,
+        "Foto" : "/chaleco_ig_1.jpg"
+    }
+]
+
+
+
+
+
+    
+
