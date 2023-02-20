@@ -1,5 +1,5 @@
 // import './Item.css';
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 // export const Item = ({item})=>{
 //     return(
@@ -24,9 +24,8 @@ export function Item ({item}){
             <img className=" producto_Imagen" src={imgUrl} alt="producto.Producto" />
             <div className="producto_Info">
                 {item.Producto}  <h3>{item.Nombre}</h3>
-                <h2>${item.Precio}</h2>
-                
-                {/* <Link to="/item/:id" className="styleDetalle"> <button> Detalle </button> </Link> */}
+                <h2>${item.Precio}</h2>                
+                <Link to="/item/:productId" className="styleDetalle"> <button> Detalle </button> </Link>
                 
                 
             </div>

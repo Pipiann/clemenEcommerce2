@@ -2,7 +2,7 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer, { ItemListContainer2 } from './components/ItemListContainer';
 import CardWidget from './components/CardWidget';
 import { ItemList } from './components/ItemList';
 import { BrowserRouter,Routes,Route} from 'react-router-dom';
@@ -20,11 +20,11 @@ function App() {
             <div>
                 <NavBar/>
                 <CardWidget/>
-                <ItemListContainer greeting="Clementina Mandarina Ropa con Actitud"/>
+                {/* <ItemListContainer greeting="Clementina Mandarina Ropa con Actitud"/> */}
                 <ItemList/>
                 <Routes>
-                  <Route path='/' element={<ItemListContainer />}/>
-                  <Route path="/productos/:tipoProducto" element={<ItemListContainer />}/>
+                  <Route path='/' element={<ItemListContainer greeting="Clementina Mandarina Ropa con Actitud" />}/>
+                  <Route path="/category/:id" element={<ItemListContainer2 />}/>
                   <Route path="/item/:productId" element={<ItemDetailsContainer/>}/>
                   <Route path="/cart" element={<CardWidget/>}/>
              {/*      <Route path='*' element={<ItemListContainer />}/> */}
