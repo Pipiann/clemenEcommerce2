@@ -6,25 +6,33 @@ import ItemListContainer from './components/ItemListContainer';
 import CardWidget from './components/CardWidget';
 import { ItemList } from './components/ItemList';
 import { BrowserRouter,Routes,Route} from 'react-router-dom';
-// import { ItemDetailsContainer } from './components/ItemDetailsContainer';
+import { ItemDetailsContainer } from './components/ItemDetailsContainer';
 import SobreMi from './components/SobreMi'
 
 function App() {
   return (
     <div className="App">
-       <NavBar/>
-       <CardWidget/>
-          <ItemListContainer greeting="Clementina Mandarina Ropa con Actitud"/>
-          <ItemList/>
-      <BrowserRouter>
-        <Routes>
        
-        
-          {/* <Route path='/category/:id' element= {<ItemListContainer/>} ></Route>
-          <Route path='/item/:id' element= {<ItemDetailsContainer/>} ></Route>
-         <Route path='/' element= {<ItemListContainer/>} ></Route>  */}
-         <Route path='/' element= {<NavBar/>} ></Route>
-          <Route path='/sobremi' element= {<SobreMi/>} ></Route>
+
+
+          <BrowserRouter>
+        <div className="App">
+            <div>
+                <NavBar/>
+                <CardWidget/>
+                <ItemListContainer greeting="Clementina Mandarina Ropa con Actitud"/>
+                <ItemList/>
+                <Routes>
+                  <Route path='/' element={<ItemListContainer />}/>
+                  <Route path="/productos/:tipoProducto" element={<ItemListContainer />}/>
+                  <Route path="/item/:productId" element={<ItemDetailsContainer/>}/>
+                  <Route path="/cart" element={<CardWidget/>}/>
+             {/*      <Route path='*' element={<ItemListContainer />}/> */}
+                 
+                </Routes>
+            </div>
+        </div>
+      </BrowserRouter>
 
         
           
@@ -37,9 +45,9 @@ function App() {
         
          
 
-        </Routes> 
+        {/* </Routes>  */}
        
-           // </BrowserRouter>
+           {/* // </BrowserRouter> */}
     </div>
   );
 }

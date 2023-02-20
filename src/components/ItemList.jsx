@@ -1,6 +1,7 @@
 import items from "../Productos_Json/ProductosJson.json";
 import {Item} from "./Item"
-// import "./styles/producto.css"
+import { useEffect } from "react";
+
 
 
 export function ItemList () {

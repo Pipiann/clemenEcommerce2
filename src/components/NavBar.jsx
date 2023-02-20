@@ -9,7 +9,7 @@ import CardWidget from ".//CardWidget";
 
 
 
-function CollapsibleExample() {
+function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
@@ -17,17 +17,17 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Link to="/SobreMi">Sobre Mi</Link>
-            <Nav.Link href="#pricing">Contacto</Nav.Link>
+            <Nav.Link ><Link to="/SobreMi">Sobre Mi</Link></Nav.Link>
+            <Nav.Link href="#pricing"> <Link to="/contacto"> Contacto </Link> </Nav.Link>
             <NavDropdown title="Productos" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Remeras</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1"><Link to="/remeras">Remeras </Link></NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Vestidos
+              <Link to="/vestidos">Vestidos </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Pantalones</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3"><Link to="/pantalones">Pantalones </Link></NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Bebes
+              <Link to="/bebes">Bebes </Link>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
@@ -54,4 +54,4 @@ function CollapsibleExample() {
     
 }
 
-export default CollapsibleExample;
+export default NavBar;
